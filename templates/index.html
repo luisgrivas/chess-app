@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Chessboard</title>
+		<link
+				rel="stylesheet"
+				href="{{ url_for('static', filename='css/chessboard-1.0.0.min.css')}}"
+		/>
+	</head>
+	<body>
+		<h1>Hello!</h1>
+    		
+		<div id="board" style="width: 400px"></div>
+		<form method="post" action="/restart">
+			<button id="startPositionBtn"> Restart Game</button>
+		</form>
+
+		<script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/chessboard-1.0.0.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/app.js')}}"></script>
+	</body>
+</html>
